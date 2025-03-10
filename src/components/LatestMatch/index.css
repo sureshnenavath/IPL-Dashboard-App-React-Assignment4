@@ -1,0 +1,7 @@
+/* Write your CSS here */
+.latest-match-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightblue;
+}

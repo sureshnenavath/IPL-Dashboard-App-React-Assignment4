@@ -1,0 +1,38 @@
+/* Write your CSS here */
+.team-card {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  margin: 10px;
+}
+
+.team-card-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-card-item:hover {
+  transform: scale(1.05);
+}
+
+.team-logo {
+  width: 90px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.team-name {
+  font-size: 18px;
+  font-weight: bold;
+}
