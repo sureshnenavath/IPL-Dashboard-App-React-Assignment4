@@ -1,38 +1,110 @@
-/* Write your CSS here */
-.team-card {
-  text-decoration: none;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45%;
-  margin: 10px;
-}
-
-.team-card-item {
+.teamcard-list-container {
+  background-color: rgba(131, 130, 180, 0.3);
+  list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  width: 100%;
-  text-align: center;
-  transition: transform 0.3s ease-in-out;
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid rgb(247, 241, 241);
+  transition: all 0.3s ease;
+}
+.team-card-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
-.team-card-item:hover {
-  transform: scale(1.05);
+.teamcard-images {
+  height: 100px;
+  width: 120px;
+  margin-right: 15px;
 }
 
-.team-logo {
-  width: 90px;
-  height: 80px;
-  margin-bottom: 10px;
+.team-card-heading {
+  font-family: 'Bree Serif';
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0;
 }
 
-.team-name {
-  font-size: 18px;
-  font-weight: bold;
+@media screen and (max-width: 575px) {
+  .teamcard-list-container {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .teamcard-images {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+
+  .team-card-heading {
+    font-size: 18px;
+  }
+}
+
+/* Small (>= 576px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .teamcard-list-container {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+  }
+
+  .teamcard-images {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-card-heading {
+    font-size: 22px;
+  }
+}
+
+/* Medium (>= 768px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .teamcard-list-container {
+    width: 45%;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  .teamcard-images {
+    width: 110px;
+    height: 110px;
+  }
+
+  .team-card-heading {
+    font-size: 24px;
+  }
+}
+
+/* Large (>= 992px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .teamcard-list-container {
+    width: 45%;
+    max-width: 450px;
+  }
+}
+
+/* Extra Large (>= 1200px) */
+@media screen and (min-width: 1200px) {
+  .teamcard-list-container {
+    width: 45%;
+    max-width: 500px;
+  }
+
+  .teamcard-images {
+    width: 120px;
+    height: 120px;
+  }
+
+  .team-card-heading {
+    font-size: 26px;
+  }
 }
